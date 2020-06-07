@@ -1,0 +1,268 @@
+ 
+.container {
+  background-image: url('/assets/background.jpg');
+  position: fixed;
+  text-align: center;
+  top: 0; 
+  left: 0; 
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.transparent-background {
+  width: 420px;
+  height: 640px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  margin-left: 38%;
+  margin-top: 15px;
+  box-sizing: border-box; 
+}
+
+.head {
+display: grid;
+grid-template-columns: auto auto;
+grid-gap: none;
+}
+
+
+.register {
+  background-color: #017EFF;
+  margin-left: 25px;
+  padding: 8px;
+  margin-top: 20px;
+  font-weight: bold;
+  width: 190px;
+  box-sizing: border-box;
+}
+
+.login {
+  background-color: #2A5987;
+  width: 190px;
+  height: 40px;
+  padding: 8px;
+  margin-top: 20px;
+  margin-right: 25px;
+  font-weight: bold;
+  box-sizing: border-box;
+  
+}
+
+.form-control {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  display: grid;
+  grid-template-rows: auto auto;
+  margin-top: 10px;
+  row-gap: 10px;
+}
+.first-name {
+  position: relative;
+}
+
+.last-name {
+  position: relative;
+}
+
+.email {
+  position: relative;
+}
+
+.phone {
+  position: relative;
+}
+
+.postcode {
+  position: relative;
+}
+
+.password {
+  position: relative;
+}
+
+.confirm-password {
+  position: relative;
+}
+
+.first-name i {
+  position: absolute;
+  top: 10px;
+  right:295px;
+}
+
+.password i {
+  position: absolute;
+  top: 10px;
+  right:307px;
+}
+
+.confirm-password i {
+  position: absolute;
+  top: 10px;
+  right:255px;
+}
+
+.last-name i {
+  position: absolute;
+  top: 10px;
+  right:295px;
+}
+
+.email i {
+  position: absolute;
+  top: 10px;
+  right:325px;
+}
+
+.phone i {
+  position: absolute;
+  top: 10px;
+  right:325px;
+}
+
+.postcode i {
+  position: absolute;
+  top: 10px;
+  right:310px;
+}
+
+.first-name input {
+  width: 380px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border: 1px;
+}
+
+.password input {
+  width: 380px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border: 1px;
+}
+
+.confirm-password input {
+  width: 380px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px;
+}
+
+.last-name input {
+  width: 380px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border: 1px;
+}
+
+.email input {
+  width: 380px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border: 1px;
+}
+
+.phone input {
+  width: 380px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border: 1px;
+}
+
+.postcode input {
+  width: 380px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px;
+}
+
+.month {
+  width: 120px;
+  height: 30px;
+  float: left;
+  margin-left: 10px;
+  border: 1px;
+}
+
+.day {
+  width: 120px;
+  height: 30px;
+  border: 1px;
+}
+
+.year {
+  width: 120px;
+  height: 30px;
+  float: right;
+  margin-right: 10px;
+  border: 1px;
+}
+
+ .radio {
+  color: white;
+  margin-right: 270px;
+}
+
+.female {
+  margin-left: 10px;
+}
+
+.checkbox {
+  margin-left: 10px;
+  margin-top: 20px;
+  outline: 1px solid #0F58B8;
+}
+
+.remember {
+  margin-top: 15px;
+  margin-right: 132px;
+  color: white;
+}
+
+
+
+a {
+  color: #0F62CA;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.below-input {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.birthday {
+  color: white;
+  margin-right: 325px;
+}
+
+.gender {
+  color: white;
+  margin-right: 325px;
+}
+
+.register-btn {
+  background-color: #017EFF;
+  width: 375px;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+

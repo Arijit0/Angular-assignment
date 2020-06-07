@@ -1,0 +1,19 @@
+
+  
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+      </tr>
+      <tr *ngFor="let lists of list; let i = index">
+        <button (click)="popup($event)" value="{{lists.name}}">{{lists.name}}</button>
+        <td>{{lists.age}}</td>
+        <button value="{{lists.city}}" (click)="showToaster($event)">{{lists.city}}
+          
+        </button>
+      </tr>
+     
+</table>
+
+    

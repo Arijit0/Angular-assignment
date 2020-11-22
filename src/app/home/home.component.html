@@ -1,0 +1,133 @@
+<div class="img">
+    <div class="container">
+
+        <div [ngClass]="(isClicked)?'transparent-background-register':'transparent-background-login'">
+
+        
+            <div class="head">
+                
+                    <label (click)="toggleTabs('register')" class="register" [ngStyle]="(isClicked)?{'background-color':' #017EFF'}:{'background-color': '#2A5987'}"> Register</label>
+                
+                
+                
+                    <label (click)="toggleTabs('login')" class="login" [ngStyle]="(isClicked)?{'background-color':'#2A5987'}:{'background-color':'#017EFF'}">Login</label>
+                
+            </div>
+
+        <div *ngIf="isClicked" class="toggle-register">
+
+            <form class="form-control" #Register="ngForm" (ngSubmit)="onSubmit(Register,'Register')">
+                    
+    
+                <div class="first-name">
+                    <input required type="text" name="firstname" ngModel>
+                    
+                </div>
+
+                <div class="last-name">
+                <input required type="text" name="lastname" ngModel>
+                
+            </div>
+
+            <div class="email">
+                <input required type="email" name="email" ngModel autocomplete="off">
+                
+            </div>
+
+            <div class="phone">
+                <input required type="number" name="phone" ngModel>
+                
+            </div>
+
+            <div class="postcode">
+                <input required  type="text" name="postcode" ngModel>
+                
+            </div>
+                
+            
+
+                <div class="birthday">Birthday</div>
+
+                <input required type="date" name="birthdate" class="birthdate" ngModel>
+
+                <div class="gender">Gender</div>
+
+            <div class="radio">
+                <input type="radio" class="male" name="gender" value="male">
+                <label class="male-radio">Male</label>
+                <input type="radio" class="female" name="gender" value="female">
+                <label class="female-radio">Female</label>
+            </div>
+
+            <div class="password">
+                <input required  type="password" name="password" ngModel>
+                
+            </div>
+
+            <div class="confirm-password">
+                <input required  type="password" name="confirmpassword" ngModel>
+                
+            </div>
+
+        <div class="below-input">
+            <input required type="checkbox" name="checkbox-register" class="checkbox-register" ngModel>
+            <label class="remember-register">I accept the <a href="#">terms</a>and  <a href="#">conditions</a></label>
+            
+        </div>
+
+    
+    <button type="submit" class="register-btn" [disabled]="Register.invalid">REGISTER</button>
+
+            </form>
+
+        </div>
+
+        <div *ngIf="!isClicked" class="toggle-login">
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <i id="icon-user" class="fa fa-user-circle"></i>
+                </div>
+            </div>
+
+            
+
+                <form class="form-control" (ngSubmit)="onSubmit(Login,'Login')" #Login="ngForm">
+                    
+
+                    <div class="email">
+                        <input required type="email" name="email" ngModel>
+                        
+                    </div>
+                    
+                <div class="password">
+                        <input required type="password" name="password" ngModel>
+                        
+                </div>
+
+            <div class="below-input">
+                <input type="checkbox" name="checkboxlogin" class="checkbox-login">
+                <label class="remember">Remember me</label>
+                <a href="#" class="forgot-password"><strong>Forgot Password?</strong></a>
+            </div>
+
+        
+        <button type="submit" class="login-btn" [disabled]="Login.invalid">Login</button>
+    
+
+            <div class="social-login">
+                <p class="login-with"><strong>Or Login With</strong></p>
+                <img class="facebook"  src="/assets/facebook.png" alt="facebook.png">
+                <img class="linkdin"  src="/assets/linkdin.png" alt="linkdin.png">
+                <img class="google" src="/assets/google-plus.png" alt="google-plus.png">
+                
+            </div> 
+
+                </form>
+        </div>
+        
+        </div>   
+    </div>
+</div>
+
+
